@@ -51,6 +51,7 @@ void artist_print(struct song_node ** library, char *a) {
 }
 
 void library_print(struct song_node ** library) {
+  if(library != NULL)  {
   int i;
   for(i = 0; i < 27; i++) {
     if(i != 26) {
@@ -61,6 +62,7 @@ void library_print(struct song_node ** library) {
       }
     print_list(library[i]);
   }
+}
 }
 
 void shuffle_library(struct song_node ** library){

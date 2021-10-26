@@ -38,10 +38,11 @@ int main() {
 
   printf("Testing remove:\n");
   print_song(remove_node(start, "ac/dc", "thunderstruck"));
+  print_list(start);
   printf("\n====================================\n");
 
   printf("free_list:\n");
-  print_song(free_list(start));
+  (free_list(start));
   printf("\n====================================\n");
 
   printf("\n\nMUSIC LIBRARY TESTS\n==================================\n");
@@ -80,6 +81,7 @@ int main() {
 
   printf("Testing delete_song:\n");
   delete_song(library, "pearl jam", "alive");
+  library_print(library);
   printf("\n====================================\n");
 
   printf("Testing clear_library:\n");
